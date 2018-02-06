@@ -61,6 +61,12 @@ export class CollectionService {
         });
     }
 
+    createMovie(movie): Observable<any> {
+        return this._http.put(this.url, movie).map((response: Response) => {
+            return response.text();
+        });
+    }
+
     updateMovie(id, movie): Observable<any> {
         return this._http.put(this.url + '/' + id, movie).map((response: Response) => {
             return response.text();
