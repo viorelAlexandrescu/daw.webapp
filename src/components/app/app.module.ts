@@ -14,7 +14,7 @@ import { HomeService } from '../../services/home.service';
     PagenotfoundComponent
   ],
   imports: [
-    BrowserModule, 
+    BrowserModule,
     HttpModule,
     RouterModule.forRoot(
       appRoutes,
