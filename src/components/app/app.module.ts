@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { PagenotfoundComponent } from '../pagenotfound/pagenotfound.component';
 import { appRoutes } from './app.routes';
 import { HttpModule } from '@angular/http';
-import { HomeService } from '../../services/home.service';
+import { CollectionService } from '../../services/collection.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +21,7 @@ import { HomeService } from '../../services/home.service';
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [HomeService],
+  providers: [CollectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
