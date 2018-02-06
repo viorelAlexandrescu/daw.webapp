@@ -1,3 +1,5 @@
-<p>
-  collection works!
-</p>
+<div>
+  <a *ngFor="let movie of movies" [routerLink]="['/detail', movie.id]">
+    <h4>{{movie.title}}</h4>
+  </a>
+</div>
